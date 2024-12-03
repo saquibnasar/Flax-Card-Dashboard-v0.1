@@ -30,11 +30,11 @@ const nextConfig = {
 
       {
         protocol: "https",
-        hostname: "prod-dashboard-profile-pictures.s3.amazonaws.com",
+        hostname: "prod-dashboard-profile-pictures-new.s3.amazonaws.com",
       },
       {
         protocol: "https",
-        hostname: "prod-dashboard-banner-images.s3.amazonaws.com",
+        hostname: "prod-dashboard-banner-images-new.s3.amazonaws.com",
       },
       {
         protocol: "https",
