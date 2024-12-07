@@ -353,7 +353,7 @@ const MobileView = ({
           </div>
         )}
 
-        {isFormOpened && (
+        {isFormOpened && false && (
           <motion.div
             initial={{ y: 100 }}
             animate={{ y: 100 }}
