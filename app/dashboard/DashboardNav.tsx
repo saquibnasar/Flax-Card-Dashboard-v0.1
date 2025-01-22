@@ -2,6 +2,7 @@ import Link from "next/link";
 import { RiAddCircleLine } from "react-icons/ri";
 import SearchInput from "../components/SearchInput";
 
+
 const DashboardNav = () => (
   <div className="flex flex-col md:flex-row w-full gap-5 mb-5 md:mb-12 lg:mb-16 justify-between">
     <div className="">

@@ -204,6 +204,7 @@ const AboutPage = ({
           ) : (
             <div className="form-control col-span-2 md:col-span-1">
               <label className="label-text p-1">Employee Id</label>
+
               <input
                 type="text"
                 className="input input-bordered"

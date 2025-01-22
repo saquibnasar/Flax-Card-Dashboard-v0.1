@@ -121,7 +121,7 @@ const ActiveCard = ({ name, designation, profileImage, employeeId }: Props) => {
           <button
             className="bg-blue rounded-lg w-full py-2 md:py-0 md:max-w-[160px] text-white hover:opacity-95 hover:scale-[0.98] active:scale-[0.95] transition-all duration-150 ease-linear"
             onClick={handleActivateButton}
-            disabled={input.length < 10}
+            disabled={input.length < 8}
           >
             {isLoading ? <Spinner /> : `Activate ${cardType}`}
           </button>

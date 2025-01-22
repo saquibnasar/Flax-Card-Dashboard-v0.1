@@ -177,7 +177,7 @@ const MobileView = ({
 
   const [scrollPosition, setScrollPosition] = useState(0);
   const [isShareClicked, setIsShareClicked] = useState(false);
-  const [isFormOpened, setIsFormOpened] = useState(false);
+  const [isFormOpened, setIsFormOpened] = useState(true);
   const { scrollY } = useScroll({ container: ref });
   useMotionValueEvent(scrollY, "change", (latest) => {
     setScrollPosition(latest);
@@ -353,7 +353,7 @@ const MobileView = ({
           </div>
         )}
 
-        {isFormOpened && false && (
+        {isFormOpened && (
           <motion.div
             initial={{ y: 100 }}
             animate={{ y: 100 }}
