@@ -110,7 +110,7 @@ const TableButton = ({
                   <p className="text-sm text-tSecondary">{`${qrSerialNumber}`}</p>
                 </div>
                 <ToggleButton
-                  isChecked={enableQr}
+                  isChecked={!enableQr}
                   onChange={() => {
                     setEnableQr(!enableQr);
                     // tokenState(employeeId, qrSerialNumber, !enableQr);
