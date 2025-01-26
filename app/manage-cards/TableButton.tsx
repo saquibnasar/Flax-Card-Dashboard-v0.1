@@ -91,7 +91,7 @@ const TableButton = ({
                   <p className="text-sm text-tSecondary">{`${nfcSerialNumber}`}</p>
                 </div>
                 <ToggleButton
-                  isChecked={enableNfc}
+                  isChecked={!enableNfc}
                   onChange={() => {
                     setEnableNfc(!enableNfc);
                     // tokenState(employeeId, nfcSerialNumber, !enableNfc);
