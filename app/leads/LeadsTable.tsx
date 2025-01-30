@@ -7,10 +7,10 @@ import Table from "../components/Table";
 const LeadsTable = () => {
   const tableColumnHeaders = [
     "Lead Name",
-    "Company",
+    "Mobile Number",
     "Connected With",
     "Date",
-    "Export",
+    "Message",
   ];
   return (
     <Table>
@@ -29,7 +29,6 @@ const LeadsTable = () => {
           <Table.Row key={item}>
             <Table.ColumnHeaderCheckbox />
             <Table.Cell>
-              Danilo Sousa
               <Table.HeaderCell
                 name="Danilo Sousa"
                 subTitle="danilo@example.com"
@@ -38,7 +37,7 @@ const LeadsTable = () => {
                 Danilo Sousa
               </Table.HeaderCell>
             </Table.Cell>
-            <Table.Cell>Tesla</Table.Cell>
+            <Table.Cell>432342434</Table.Cell>
             <Table.Cell>
               <div className="flex items-center gap-3">
                 <div className="avatar">
@@ -55,12 +54,12 @@ const LeadsTable = () => {
             </Table.Cell>
             <Table.Cell>Oct 28, 2023</Table.Cell>
             <Table.Cell>
-              <button className="flex items-center px-4 py-2 text-blue rounded-md hover:bg-dPrimary duration-150 ease-linear">
+              Lorem ipsum dol
+              {/* <button className="flex items-center px-4 py-2 text-blue rounded-md hover:bg-dPrimary duration-150 ease-linear">
                 <span className="mr-2">
                   <RiDownload2Line />
                 </span>
-                Export
-              </button>
+              </button> */}
             </Table.Cell>
           </Table.Row>
         ))}

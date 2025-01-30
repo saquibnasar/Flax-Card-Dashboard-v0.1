@@ -5,6 +5,7 @@ import Link from "next/link";
 import coverPlaceHolder from "@/public/dashboard/cardCover.jpeg";
 import { CardDetails } from "../dashboard/CardGrid";
 import { RiCheckboxCircleFill } from "react-icons/ri";
+import ClientImageWithFallback from "./ClientImageWithFallBack";
 
 interface Props {
   card: CardDetails;
@@ -31,16 +32,27 @@ const Card = ({ card, path = "dashboard" }: Props) => {
             <RiCheckboxCircleFill />
           </div>
         )}
-        <Image
+        <ClientImageWithFallback
           className="object-cover rounded-lg -z-0"
           src={
-            card.bannerImages?.[0]
+            card.bannerImages?.[0]?.imageUrl
+              ? card.bannerImages[0].imageUrl
+              : coverPlaceHolder
+          }
+          fallbackSrc={coverPlaceHolder}
+          alt="cardImg"
+          fill
+        />
+        {/* <Image
+          className="object-cover rounded-lg -z-0"
+          src={
+            card.bannerImages?.[0]?.imageUrl
               ? card.bannerImages[0].imageUrl
               : coverPlaceHolder
           }
           alt="cardImg"
           fill
-        />
+        /> */}
       </div>
 
       <div className="flex space-x-5 items-center">

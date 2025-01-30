@@ -9,8 +9,8 @@ const ManageCardsNavbar = () => {
   return (
     <div className="flex flex-col md:flex-row gap-4">
       <div>
-        <h1 className="text-2xl mb-2">Card management</h1>
-        <p className="text-lg text-tSecondary">Current active cards</p>
+        <h1 className="text-2xl mb-2">Device management</h1>
+        <p className="text-lg text-tSecondary">Current active Devices</p>
       </div>
       <div className="flex flex-col md:flex-row gap-4 md:items-center">
         <SearchInput />

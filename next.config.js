@@ -38,6 +38,14 @@ const nextConfig = {
       },
       {
         protocol: "https",
+        hostname: "prod-dashboard-profile-pictures.s3.amazonaws.com",
+      },
+      {
+        protocol: "https",
+        hostname: "prod-dashboard-banner-images.s3.amazonaws.com",
+      },
+      {
+        protocol: "https",
         hostname: "prod-dashboard-pdf-files.s3.amazonaws.com",
       },
     ],

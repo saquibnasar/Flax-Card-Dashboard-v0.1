@@ -2,11 +2,10 @@ import Link from "next/link";
 import { RiAddCircleLine } from "react-icons/ri";
 import SearchInput from "../components/SearchInput";
 
-
 const DashboardNav = () => (
   <div className="flex flex-col md:flex-row w-full gap-5 mb-5 md:mb-12 lg:mb-16 justify-between">
     <div className="">
-      <h1 className="text-2xl mb-2">My cards</h1>
+      <h1 className="text-2xl mb-2">Profile Management</h1>
       <p className="text-lg text-tSecondary">
         Get a bird&apos;s eye view of all the members
       </p>
